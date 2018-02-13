@@ -1,0 +1,43 @@
+"*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    fontFamily: "monospace"
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "66f0e2b4-e130-79fd-dae4-80dc0d9e6cea"
+  "linter-clang": {}
+  "linter-flake8":
+    projectConfigFile: [
+      ".flake8rc"
+    ]
+  "linter-rust":
+    cargoCommand: "rustc"
+    disableExecTimeout: true
+  "linter-ui-default": {}
+  "markdown-themeable-pdf":
+    customFooterPath: "markdown-themeable-pdf/uni-footer.js"
+    customHeaderPath: "markdown-themeable-pdf/uni-header.js"
+  "package-generator":
+    packageSyntax: "coffeescript"
+  "seti-ui":
+    compactView: true
+    displayIgnored: false
+    fileIcons: false
+    font: "Default Atom Font"
+    themeColor: "Steel"
+  "terminal-plus":
+    core: {}
+    style:
+      defaultPanelHeight: "200px"
+  welcome:
+    showOnStartup: false
+".lisp.source":
+  editor:
+    softWrap: false
