@@ -1,5 +1,9 @@
 "*":
   core:
+    disabledPackages: [
+      "linter-gcc"
+      "linter-clang"
+    ]
     telemetryConsent: "limited"
     themes: [
       "seti-ui"
@@ -7,13 +11,19 @@
     ]
   editor:
     fontFamily: "monospace"
+    fontSize: 15
     showInvisibles: true
     tabLength: 4
-    tabType: "soft"
   "exception-reporting":
     userId: "66f0e2b4-e130-79fd-dae4-80dc0d9e6cea"
-  "linter-clang": {}
+  "linter-clang":
+    clangDefaultCppFlags: "-Wall -Wextra -std=c++11"
+    executablePath: "clang-5.0"
   "linter-flake8":
+    ignoreErrorCodes: [
+      "E302"
+      "E128"
+    ]
     projectConfigFile: [
       ".flake8rc"
     ]
