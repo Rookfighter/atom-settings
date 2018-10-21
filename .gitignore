@@ -6,3 +6,8 @@ packages
 .apm
 .node-gyp
 .npm
+github.cson
+init.coffee
+recovery
+snippets.cson
+styles.less
