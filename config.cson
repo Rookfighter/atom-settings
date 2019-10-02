@@ -30,7 +30,8 @@
   "linter-rust":
     cargoCommand: "rustc"
     disableExecTimeout: true
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-themeable-pdf":
     customFooterPath: "markdown-themeable-pdf/uni-footer.js"
     customHeaderPath: "markdown-themeable-pdf/uni-header.js"
