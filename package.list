@@ -1,5 +1,4 @@
 autocomplete-cmake@0.3.1
-autocomplete-haskell@1.0.1
 autocomplete-python@1.10.12
 build@0.70.0
 busy@0.7.0
@@ -13,10 +12,7 @@ language-rust@0.4.12
 language-scala@1.1.9
 language-vhdl@0.7.2
 linter@2.2.0
-linter-clang@4.1.2
 linter-flake8@2.3.0
-linter-gcc@0.7.1
-linter-rust@0.9.0
 linter-ui-default@1.7.1
 monokai@0.24.0
 nord-atom-syntax@0.9.1
