@@ -1,7 +1,6 @@
 "*":
   core:
     disabledPackages: [
-      "linter-gcc"
       "linter-clang"
     ]
     telemetryConsent: "limited"
@@ -9,13 +8,17 @@
       "seti-ui"
       "seti-syntax"
     ]
+    useTreeSitterParsers: false
   editor:
     fontFamily: "monospace"
-    fontSize: 15
+    fontSize: 17
+    scrollPastEnd: true
     showInvisibles: true
     tabLength: 4
   "exception-reporting":
     userId: "66f0e2b4-e130-79fd-dae4-80dc0d9e6cea"
+  kite:
+    showWelcomeNotificationOnStartup: false
   "linter-clang":
     clangDefaultCppFlags: "-Wall -Wextra -std=c++11"
     executablePath: "clang-5.0"
@@ -27,6 +30,9 @@
     projectConfigFile: [
       ".flake8rc"
     ]
+  "linter-gcc":
+    gccDefaultCFlags: "-c -Wall -fsyntax-only"
+    gccDefaultCppFlags: "-c -Wall -std=c++11 -fsyntax-only"
   "linter-rust":
     cargoCommand: "rustc"
     disableExecTimeout: true
