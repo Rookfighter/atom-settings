@@ -31,11 +31,12 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
-'.platform-linux':
-    'ctrl-alt-r': 'fuzzy-finder:toggle-file-finder'
+'.platform-win32 atom-workspace, .platform-linux atom-workspace':
+    'ctrl-alt-t': 'split-diff:toggle'
 
 '.platform-win32, .platform-linux':
     'ctrl-h': 'project-find:show'
+    'ctrl-t': 'fuzzy-finder:toggle-file-finder'
 
 'atom-workspace atom-text-editor:not([mini])':
     'alt-down': 'editor:move-line-down'
@@ -47,4 +48,8 @@
 
 'atom-workspace atom-text-editor':
     'ctrl-l': 'go-to-line:toggle'
-'ctrl-g': 'editor:select-line'
+    'ctrl-g': 'editor:select-line'
+
+'body':
+    'alt-shift-down': 'editor:add-selection-below'
+    'alt-shift-up': 'editor:add-selection-above'
